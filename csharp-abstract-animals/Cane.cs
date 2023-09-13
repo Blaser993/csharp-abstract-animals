@@ -8,6 +8,7 @@ namespace csharp_abstract_animals
 {
     public class Cane : Animale
     {
+        public override string Name { get; set; } = "Cane";
         public override void CosaMangi()
         {
             Console.WriteLine("Croccantini");

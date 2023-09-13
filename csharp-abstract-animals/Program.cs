@@ -18,9 +18,13 @@ Una volta create le classi, nel programma istanziare alcuni animali e utilizzare
 List<Animale> Zoo = new List<Animale>();
 
 Zoo.Add(new Aquila());
+Zoo.Add(new Passerotto());
+Zoo.Add(new Delfino());
+Zoo.Add(new Cane());
 foreach (Animale animale in Zoo)
 {
-    Console.WriteLine($"Animale {animale.Name}");
+    Console.WriteLine($"Animale: {animale.Name}");
+    Console.Write("Cibo: ");
     animale.CosaMangi();
     animale.Verso();
     animale.Dormi();
